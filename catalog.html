@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- menu -->
+    <header class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="index.html" class="logo">
+                        <img src="https://lumia-theme.com/cdn/shop/files/logo.svg?v=13116349369947907716" alt="">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <li class="menu-item">
+                        <a href="index.html" class="menu-link-item">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-link-item">Contact</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="gallery.html" class="menu-link-item">Gallery</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-link-item">Catalog</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="women.html" class="menu-link-item">Women</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="men.html" class="menu-link-item">Men</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-link-item">Buy Lumia</a>
+                    </li>
+
+                </div>
+                <div class="col-md-3">
+                    <i class="menu-item fa-solid fa-sliders"></i>
+                    <i class="menu-item fa-regular fa-message"></i>
+                    <i class="menu-item fa-solid fa-magnifying-glass"></i>
+                    <a href="#loginOverlay" id="loginButton" class="menu-item-link">
+                        <i class="menu-item fa-regular fa-user"></i>
+                    </a>
+                    <i class="menu-item fa-regular fa-heart"></i>
+                    <a href="#cartOverlay" id="loginButton" class="menu-item-link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- login -->
+        <div class="login-tab">
+            <div class="login-overlay" id="loginOverlay">
+                <div class="login-img">
+                    <img src="https://cdn.shopify.com/s/files/1/1323/8419/files/popup-newsletter-02.png?v=1669998252&width=798"
+                        alt="">
+                </div>
+                <div class="login-content">
+                    <a href="#" class="close" id="closeLoginButton">×</a>
+                    <h4 class="sign-in">Sign In to Our Store</h4>
+                    <span class="sign-in-item">Login to our store an start shopping your products</span>
+                    <div class="login-input-tab">
+                        <div class="login-input">
+                            <p class="mail">Email</p>
+                            <input class="login-text" type="text" placeholder="Enter Your Email Here">
+                        </div>
+                        <div class="login-input">
+                            <p>Password</p>
+                            <input class="login-text" type="text" placeholder="*****">
+                        </div>
+                    </div>
+                    <div class="sign-in-btn">
+                        <button class="sign-in-button">SIGN IN</button>
+                    </div>
+                    <div class="forgot">
+                        <a href="" class="forgot-p">
+                            Forgot your password?
+                        </a>
+                    </div>
+                    <div class="dont-have-acc">
+                        <p>Don't have an account?</p>
+                        <a href="#signupOverlay" id="loginButton" class="register">Register here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end login -->
+
+        <!-- sign up -->
+        <div class="login-tab">
+            <div class="login-overlay" id="signupOverlay">
+                <div class="signup-img">
+                    <img src="https://cdn.shopify.com/s/files/1/1323/8419/files/popup-newsletter-02.png?v=1669998252&width=798"
+                        alt="">
+                </div>
+                <div class="signup-content">
+                    <a href="#" class="close" id="closeLoginButton">×</a>
+                    <h4 class="sign-in">Registration to Our Store</h4>
+                    <span class="sign-in-item">Register to our store an start shopping your products</span>
+                    <div class="login-input-tab">
+                        <div class="login-input">
+                            <p class="first-name">First name</p>
+                            <input class="login-text" type="text" placeholder="Enter Your First Name">
+                        </div>
+                        <div class="login-input">
+                            <p class="last-name">Last name</p>
+                            <input class="login-text" type="text" placeholder="Enter Your Last Name">
+                        </div>
+                    </div>
+                    <div class="login-input-tab">
+                        <div class="login-input">
+                            <p class="mail">Email</p>
+                            <input class="login-text" type="text" placeholder="Enter Your Email Here">
+                        </div>
+                        <div class="login-input">
+                            <p>Password</p>
+                            <input class="login-text" type="text" placeholder="*****">
+                        </div>
+                    </div>
+                    <div class="sign-in-btn">
+                        <button class="sign-in-button">CREATE ACCOUNT</button>
+                    </div>
+                    <div class="dont-have-acc">
+                        <p>Already have an account?</p>
+                        <a href="#loginOverlay" id="loginButton" class="register">Login here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end sign up -->
+
+        <!-- cart -->
+        <div class="login-tab">
+            <div class="cart-overlay" id="cartOverlay">
+                <div class="cart-content">
+                    <a href="#" class="close" id="closeLoginButton">×</a>
+                    <h4 class="shopping">Shopping Cart </h4>
+                    <div class="tab-cart">
+                        <div class="cart-tab">
+                            <div class="cart-item">
+                                <img src="https://lumia-theme.com/cdn/shop/products/3_7d5e7880-2fc1-4b72-85b7-3bb10e38e3b1.png?v=1674549941&width=161"
+                                    alt="">
+                            </div>
+                            <div class="cart-item-title">
+                                <h4>Short denim shorts</h4>
+
+                                <span>Color: Blue</span>
+                                <span>Size: Blue</span>
+                                <span>Status: Pre-order</span>
+                                <div class="cart-item-prices">
+                                    <h4>$5.00</h4>
+                                    <div class="quantity">
+                                        <span>-</span>
+                                        <span>1</span>
+                                        <span>+</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="cart-icon">
+                            <div class="cart-icon-item">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                            <div class="cart-icon-item">
+                                <i class="fa-solid fa-pencil"></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="cart-total">
+                        <h4>SUBTOTAL</h4>
+                        <h4>$3.50 USD</h4>
+                    </div>
+
+                    <div class="order">
+                        <input type="text" placeholder="Order special instructions">
+                    </div>
+                    <div class="cart-button">
+                        <a href="cart.html">
+                            <div class="sign-in-btn">
+                                <button class="view-cart-button">VIEW MY CART</button>
+                            </div>
+                        </a>
+                        <a href="checkout.html">
+                            <div class="sign-in-btn">
+                                <button class="sign-in-button">CHECK OUT</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end cart -->
+    </header>
+    <!-- end menu -->
+    <div class="bottom-menu">
+        <a href="" class="bottom-menu-item">Shirts & Tops</a>
+        <a href="" class="bottom-menu-item">Sleepwear & Loungewear</a>
+        <a href="" class="bottom-menu-item">Coats & jackets</a>
+        <a href="" class="bottom-menu-item">Cargos</a>
+        <a href="" class="bottom-menu-item">Rain Pants</a>
+        <a href="" class="bottom-menu-item">Rain Suits</a>
+        <a href="" class="bottom-menu-item">Snow Pants & Suits</a>
+        <a href="" class="bottom-menu-item">Vests</a>
+    </div>
+    <div class="container">
+        <div class="title">
+            <h2 class="women-main-title">Catalog</h2>
+            <h3 class="women-sub-title">Choose your clothes type you want to buy.</h3>
+        </div>
+        <div class="clothes">
+            <div class="style-clothes">
+                <a href="women.html" class="style">
+                    <div class="clothes-img">
+                        <img src="https://lumia-theme.com/cdn/shop/files/category-01_6e022e00-a7b9-4d9f-8b57-fabda36afc4e.png?v=1664377618&width=465"
+                            alt="">
+                        <div class="banner-text">
+                            <h4>Women</h4>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="style-info">45
+                            <h4 class="sub">New items</h4>
+                        </div>
+                        <div class="style-info">15
+                            <h4 class="sub">Sale items</h4>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="style-clothes">
+                <a href="men.html" class="style">
+                    <div class="clothes-img">
+                        <img src="https://lumia-theme.com/cdn/shop/files/category-02.png?v=1677655197&width=465" alt="">
+                        <div class="banner-text">
+                            <h4>Men</h4>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="style-info">45
+                            <h4 class="sub">New items</h4>
+                        </div>
+                        <div class="style-info">15
+                            <h4 class="sub">Sale items</h4>
+                        </div>
+
+                    </div>
+
+                </a>
+            </div>
+            <div class="style-clothes">
+                <a href="" class="style">
+                    <div class="clothes-img">
+                        <img src="https://lumia-theme.com/cdn/shop/files/category-03.png?v=1664530414&width=465" alt="">
+                        <div class="banner-text">
+                            <h4>Teens</h4>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="style-info">45
+                            <h4 class="sub">New items</h4>
+                        </div>
+                        <div class="style-info">15
+                            <h4 class="sub">Sale items</h4>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="style-clothes">
+                <a href="" class="style">
+                    <div class="clothes-img">
+                        <img src="https://lumia-theme.com/cdn/shop/files/category-04.png?v=1669380333&width=465" alt="">
+                        <div class="banner-text">
+                            <h4>Sneakers</h4>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="style-info">45
+                            <h4 class="sub">New items</h4>
+                        </div>
+                        <div class="style-info">15
+                            <h4 class="sub">Sale items</h4>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end. new,sale items -->
+
+    <!-- recently viewed -->
+    <div class="container">
+        <div class="title">
+            <h2 class="main-title">Recently Viewed Products</h2>
+            <h3 class="sub-title">Exclusive section that stores the history of product views</h3>
+        </div>
+        <div class="clothes">
+            <div class="style-item">
+                <div class="prices">
+                    <div class="author-title">CLAYTAN</div>
+                    <span>$5.00</span>
+                </div>
+                <div class="style-hover">
+                    <div class="style-image">
+                        <img class="bot-img"
+                            src="https://cdn.shopify.com/s/files/1/1323/8419/products/2_d908a544-ced8-4ce3-a8ea-26eb8fd4f94c.png?v=1674549937&width=300"
+                            alt="">
+                        <img class="top-img"
+                            src="https://cdn.shopify.com/s/files/1/1323/8419/products/3_7d5e7880-2fc1-4b72-85b7-3bb10e38e3b1.png?v=1674549941&width=300"
+                            alt=".">
+
+                    </div>
+                    <div class="style-content">
+                        <h4 class="title">
+                            <a rel="bookmark">Short denim shorts</a>
+                        </h4>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="style-item">
+                <div class="prices">
+                    <div class="author-title">COLVIN KLEIN</div>
+                    <span>$44.00</span>
+                </div>
+                <div class="style-hover">
+                    <div class="style-image">
+                        <img class="bot-img"
+                            src="https://cdn.shopify.com/s/files/1/1323/8419/products/1_968fe4f0-5e32-49de-8e65-1d25c53c81b6.png?v=1674550121&width=300"
+                            alt="">
+                        <img class="top-img"
+                            src="https://cdn.shopify.com/s/files/1/1323/8419/products/2_58608bd3-1673-4351-9efb-8197e46a8d4b.png?v=1674550120&width=300"
+                            alt=".">
+
+                    </div>
+                    <div class="style-content">
+                        <h4 class="title">
+                            <a rel="bookmark">Loose padded jacket</a>
+                        </h4>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="style-item">
+                <div class="prices">
+                    <div class="author-title">CANVERSE</div>
+                    <span>$31.00</span>
+                </div>
+                <div class="style-hover">
+                    <div class="style-image">
+                        <img class="bot-img"
+                            src="https://cdn.shopify.com/s/files/1/1323/8419/products/3_a0a998a3-f996-4558-906f-1b1eae1f55cb.png?v=1678265625&width=300"
+                            alt="">
+                        <img class="top-img"
+                            src="https://cdn.shopify.com/s/files/1/1323/8419/products/1_844420b0-4baa-4531-8828-698e2e435d75.png?v=1678265625&width=300"
+                            alt=".">
+
+                    </div>
+                    <div class="style-content">
+                        <h4 class="title">
+                            <a rel="bookmark">Padded short jacket</a>
+                        </h4>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end recently viewed -->
+</body>
+<!-- footer -->
+<footer class="footer">
+    <div class="email">
+        <h4>Do you want to be among the first to know</h4>
+        <h4>about sale time?</h4>
+    </div>
+    <div class="form-email">
+        <input type="text" class="input-search" placeholder="Enter your email here">
+
+    </div>
+    <div></div>
+    <div class="container footer-wrap">
+        <div class="ft-group-1">
+            <h2 class="title-bar">
+                <img src="https://lumia-theme.com/cdn/shop/files/logo-white.svg?v=3540035765786773790" alt="">
+            </h2>
+            <ul class="menu-ft">
+                <li class="menu-ft-item">
+                    <a href="" class="menu-ft-link">Worldwide fashion store with wide collection of styles with over 100
+                        international fashion brands.</a>
+                </li>
+                <li class="platform">
+                    <a href="" class="platform-app">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" class="platform-app">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="platform-app">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="" class="platform-app">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="" class="platform-app">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="ft-group-2">
+            <h2 class="title-bar">INFORMATION</h2>
+            <ul class="menu-ft">
+                <li class="menu-ft-item">
+                    <a href="" class="menu-ft-link">About us</a>
+                </li>
+                <li class="menu-ft-item">
+                    <a href="" class="menu-ft-link">Search</a>
+                </li>
+                <li class="menu-ft-item">
+                    <a href="" class="menu-ft-link">Contacts</a>
+                </li>
+                <li class="menu-ft-item">
+                    <a href="" class="menu-ft-link">Our News</a>
+                </li>
+            </ul>
+        </div>
+        <div class="ft-group-2">
+            <h2 class="title-bar">GET SHOPPING</h2>
+            <ul class="menu-ft">
+                <li class="menu-ft-item">
+                    <a href="" class="menu-ft-link">Women</a>
+                </li>
+                <li class="menu-ft-item">
+                    <a href="" class="menu-ft-link">Men</a>
+                </li>
+                <li class="menu-ft-item">
+                    <a href="" class="menu-ft-link">Teenagers</a>
+                </li>
+                <li class="menu-ft-item">
+                    <a href="" class="menu-ft-link">Accesssories</a>
+                </li>
+            </ul>
+        </div>
+        <div class="ft-group-2">
+            <h2 class="title-bar">CONTACTS</h2>
+            <ul class="menu-ft">
+                <li class="menu-ft-item">
+                    <a href="" class="menu-ft-link">Phone: +1-202-555-0158</a>
+                </li>
+                <li class="menu-ft-item">
+                    <a href="" class="menu-ft-link">Email: loremipsum@gmail.com</a>
+                </li>
+                <li class="menu-ft-item">
+                    <a href="" class="menu-ft-link">Address: 165th St, Jamaica, NY 11</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</footer>
+<!-- end footer -->
+</html>
